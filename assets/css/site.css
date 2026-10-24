@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --bg: #0d0d0d;
+  --panel: #1a1a1a;
+  --border: #262626;
+  --text: #fff;
+  --gold: #997300;
+  --heading: #e8b257;
+  --code: #66ff66;
+  --dim: #8a8a8a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+h1,
+h2 {
+  color: var(--heading);
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 2.4em;
+  margin: 0 0 8px;
+}
+
+h1::before {
+  content: "$ ";
+  color: var(--code);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 48px 0 12px;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 8px;
+}
+
+h2::before {
+  content: "## ";
+  color: var(--gold);
+}
+
+.tagline {
+  color: var(--dim);
+  margin: 0 0 24px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+ul li {
+  padding: 10px 0 10px 24px;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+
+ul li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--code);
+}
+
+strong {
+  color: var(--heading);
+  font-weight: normal;
+}
+
+a {
+  color: var(--code);
+}
+
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.schedule th,
+.schedule td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.schedule th {
+  color: var(--gold);
+  font-weight: normal;
+}
+
+.schedule .time {
+  color: var(--code);
+  white-space: nowrap;
+}
+
+.note {
+  color: var(--dim);
+  font-size: 0.9em;
+}
+
+footer {
+  margin-top: 64px;
+  color: var(--dim);
+  font-size: 0.85em;
+}
+
+footer a {
+  color: var(--dim);
+  text-decoration: underline;
+}
