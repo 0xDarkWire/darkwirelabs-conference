@@ -15,7 +15,7 @@ layout: default
 - **Address drops 24h before.** Figure it out.
 - **Talk schedule goes out 24h before** and keeps getting updated as people sign up. Sign up whenever — just give 4 hours notice before your slot. You'll get pinged before you go on (Signal bot: TBD).
 - **One talk at a time.** Otherwise go do whatever, we don't care.
-- **Smoking's fine.**
+- **Smoking?** Yes.
 
 ## what goes down
 
