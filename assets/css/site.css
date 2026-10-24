@@ -122,6 +122,40 @@ a {
   font-size: 0.9em;
 }
 
+pre {
+  overflow-x: auto;
+  margin: 0 0 24px;
+  line-height: 1.25;
+}
+
+.bbs-box {
+  color: var(--code);
+  text-shadow: 0 0 6px rgba(102, 255, 102, 0.35);
+  white-space: pre;
+}
+
+.bbs-block {
+  color: var(--text);
+  background-color: var(--panel);
+  border: 1px solid var(--border);
+  padding: 16px 20px;
+  white-space: pre;
+}
+
+.bbs-block a {
+  color: var(--code);
+  text-decoration: none;
+}
+
+.bbs-block a:hover {
+  background-color: var(--code);
+  color: var(--bg);
+}
+
+h2 {
+  scroll-margin-top: 24px;
+}
+
 footer {
   margin-top: 64px;
   color: var(--dim);
