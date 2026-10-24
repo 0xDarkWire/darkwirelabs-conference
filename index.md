@@ -5,7 +5,7 @@ layout: default
 <header class="hero">
   <img class="logo" src="{{ '/Logo.png' | relative_url }}" alt="Dark Wire Labs logo">
   <h1 class="site-title">{{ site.title }}</h1>
-  <p class="event-date">march 24&ndash;25, 2027</p>
+  <p class="event-date">march 24&ndash;25, 2027 &middot; milwaukee, wi</p>
   <p class="tagline">an invite-only thing. no randos.</p>
 </header>
 
@@ -42,7 +42,7 @@ TBD — drops 24h before. Sign up whenever.
 
 ## location
 
-Address drops 24h before. Figure it out.
+Milwaukee, WI. Address drops 24h before. Figure it out.
 {: .note}
 
 <footer>
