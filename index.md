@@ -2,25 +2,13 @@
 layout: default
 ---
 
-<pre class="bbs-box">╔══════════════════════════════════════════════════╗
-║  EVENT_NAME BBS · Node 1 · 28800          ONLINE  ║
-╚══════════════════════════════════════════════════╝</pre>
+<header class="hero">
+  <img class="logo" src="{{ '/Logo.png' | relative_url }}" alt="Dark Wire Labs logo">
+  <h1 class="site-title">{{ site.title }}</h1>
+  <p class="tagline">an invite-only thing. no randos.</p>
+</header>
 
-<pre class="bbs-block">───────────────────────────── SYSTEM INFO ─────────────────────────────
-
-What....: EVENT_NAME — an invite-only hacker thing
-Where...: TOP_SECRET (address drops 24h before, figure it out)
-Talks...: schedule drops 24h before, updates as people sign up
-Signup..: signal bot · 4h notice before your slot, minimum
-SysOp...: <a href="https://www.darkwirelabs.com">dark wire labs</a>
-
-────────────────────────────── MAIN MENU ──────────────────────────────
-
- <a href="#rules">[1] the rules</a>        <a href="#activities">[3] what goes down</a>
- <a href="#signup">[2] get a slot</a>      <a href="#schedule">[4] schedule</a>
-</pre>
-
-<h2 id="rules">the rules</h2>
+## the rules
 
 - **Invite only.** No randos. Don't bring your weird friend nobody knows.
 - **Address drops 24h before.** Figure it out.
@@ -28,38 +16,38 @@ SysOp...: <a href="https://www.darkwirelabs.com">dark wire labs</a>
 - **One talk at a time.** Otherwise go do whatever, we don't care.
 - **Smoking's fine.**
 
-<h2 id="activities">what goes down</h2>
+## what goes down
 
 - **Hack on whatever.** Bring a project, break something, build something. Nobody's stopping you.
 - **CTF.** Run one, play one, wreck one. Spin up challenges and watch people suffer.
 - **Hardware hacking and soldering** (where permitted). Bring your irons, your routers, your cursed dev boards. Ask before you desolder the venue.
 - **Whatever else you bring.** That's the point.
 
-<h2 id="signup">get a slot</h2>
+## get a slot
 
 Message the Signal bot with your handle and talk title. Four hours notice before your slot, minimum. You'll get pinged before you go on.
 
-<h2 id="schedule">schedule</h2>
+## schedule
 
 {% if site.data.schedule %}
-<table class="schedule">
-  <thead>
-    <tr><th>time</th><th>speaker</th><th>talk</th></tr>
-  </thead>
-  <tbody>
-    {% for talk in site.data.schedule %}
-    <tr>
-      <td class="time">{{ talk.time }}</td>
-      <td>{{ talk.speaker }}</td>
-      <td>{{ talk.title }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+| time | speaker | talk |
+|------|---------|------|
+{% for talk in site.data.schedule %}| {{ talk.time }} | {{ talk.speaker }} | {{ talk.title }} |
+{% endfor %}
 {% else %}
-<p class="note">TBD — drops 24h before. Sign up whenever.</p>
+TBD — drops 24h before. Sign up whenever.
+{: .note}
 {% endif %}
 
+## location
+
+Address drops 24h before. Figure it out.
+{: .note}
+
 <footer>
-  a <a href="https://www.darkwirelabs.com">dark wire labs</a> thing · no randos
+  <nav aria-label="Site navigation">
+    <ol class="footers">
+      <li class="footer"><a href="https://www.darkwirelabs.com">[dark wire labs]</a></li>
+    </ol>
+  </nav>
 </footer>
